@@ -6,7 +6,7 @@ function oddishOrEvenish(number) {
     sum += +number[i];
   }
 
-  return sum % 2 === 0 ? "Even" : "Odd";
+  return sum % 2 !== 0 ? "Odd" : "Even";
 }
 
 console.log(oddishOrEvenish(43));
