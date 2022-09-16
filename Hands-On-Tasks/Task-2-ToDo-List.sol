@@ -14,6 +14,7 @@ contract ToDoList {
     toDo[] public myToDoList;
 
     // Creates a toDo and pushes to the toDoList
+    // Using calldata for local variables saves some gas
     function addToDo(string calldata _task) external {
         myToDoList.push(toDo(_task,false));
     }
